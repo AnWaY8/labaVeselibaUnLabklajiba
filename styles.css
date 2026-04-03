@@ -1,0 +1,27 @@
+.section-img{
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+  margin: 15px 0;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.project-list svg, .list-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
