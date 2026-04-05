@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+    <div class="container">
   
   <header>
     <h1>Ko es un mana skola varam darīt laba veselības un labklājības labā?</h1>
@@ -120,55 +120,41 @@
     <section id="self-check">
       <h2>Interaktīvā daļa: Mans veselīgo paradumu čeklists</h2>
       <p>Atzīmē, kurus paradumus tu jau ievēro un kurus gribētu uzlabot.</p>
-      <form>
-        <fieldset>
-          <legend>Uzturs</legend>
-          <label>
-            <input type="checkbox" name="food" value="veggies">
-            Es ēdu dārzeņus un/vai augļus vismaz 5 reizes dienā.
-          </label><br>
-          <label>
-            <input type="checkbox" name="food" value="water">
-            Es dzeru vismaz 6–8 glāzes ūdens dienā.
-          </label><br>
-          <label>
-            <input type="checkbox" name="food" value="fastfood">
-            Es ēdu ātro ēdienu un ļoti saldus našķus reti, ne katru dienu.
-          </label>
-        </fieldset>
+	  
+  <form>
+  <div class="question-box">
+    <p>Vai tu ēd dārzeņus un augļus?</p>
+    <label><input type="radio" name="q1"> Katru dienu</label><br>
+    <label><input type="radio" name="q1"> Dažreiz</label><br>
+    <label><input type="radio" name="q1"> Reti</label>
+  </div>
 
-        <fieldset>
-          <legend>Fiziskās aktivitātes</legend>
-          <label>
-            <input type="checkbox" name="activity" value="60min">
-            Es kustos vismaz 60 minūtes dienā.
-          </label><br>
-          <label>
-            <input type="checkbox" name="activity" value="stairs">
-            Es bieži izvēlos kāpnes, nevis liftu.
-          </label>
-        </fieldset>
+  <div class="question-box">
+    <p>Vai tu dzer pietiekami daudz ūdens?</p>
+    <label><input type="radio" name="q2"> Jā</label><br>
+    <label><input type="radio" name="q2"> Dažreiz</label><br>
+    <label><input type="radio" name="q2"> Nē</label>
+  </div>
 
-        <fieldset>
-          <legend>Miegs un mentālā veselība</legend>
-          <label>
-            <input type="checkbox" name="sleep" value="8h">
-            Es guļu vismaz 8 stundas naktī.
-          </label><br>
-          <label>
-            <input type="checkbox" name="sleep" value="screen">
-            Es nelietoju telefonu īsi pirms miega.
-          </label><br>
-          <label>
-            <input type="checkbox" name="sleep" value="support">
-            Ja man ir grūti, es meklēju atbalstu un nepalieku viens/una ar problēmām.
-          </label>
-        </fieldset>
-      </form>
-      <p>
-        Nākamajā izstrādes solī šim čeklistam var pievienot JavaScript,
-        kas skaita atzīmētos punktus un parāda īsu komentāru par rezultātu.
-      </p>
+  <div class="question-box">
+    <p>Vai tu kusties 60 min dienā?</p>
+    <label><input type="radio" name="q3"> Jā</label><br>
+    <label><input type="radio" name="q3"> Dažreiz</label><br>
+    <label><input type="radio" name="q3"> Nē</label>
+  </div>
+
+  <div class="question-box">
+    <p>Vai tu guli vismaz 8 stundas?</p>
+    <label><input type="radio" name="q4"> Jā</label><br>
+    <label><input type="radio" name="q4"> Dažreiz</label><br>
+    <label><input type="radio" name="q4"> Nē</label>
+  </div>
+  </form>
+  
+	  <button type="button" id="check-result-btn" class="btn">Parādīt manu rezultātu</button>
+        <p id="checklist-result">
+	      Atzīmē savus paradumus, lai redzētu rezultātu.   
+        </p>
     </section>
 
     <!-- Interaktīvā daļa: mini tests -->
@@ -223,5 +209,7 @@
   <footer>
     <p>Lapa 3 – Risinājumi un interaktīvā daļa</p>
   </footer>
+  
+  <script src="script.js"></script>
 </body>
 </html>
