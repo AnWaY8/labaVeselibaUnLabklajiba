@@ -37,3 +37,15 @@ document.getElementById("checklist-result").innerHTML =
 result.join("<br>");
 
 });
+
+document.querySelectorAll("#quiz details").forEach(item => {
+item.addEventListener("toggle", function() {
+
+if (this.open) {
+this.style.background = "#f0fdf4";
+} else {
+this.style.background = "#fff";
+}
+
+});
+});
