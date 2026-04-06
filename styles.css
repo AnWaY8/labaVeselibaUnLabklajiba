@@ -359,3 +359,20 @@ footer {
   transform: translateX(4px);
   background: #ecfdf5;
 }
+
+.external-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #16a34a;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.external-link:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
