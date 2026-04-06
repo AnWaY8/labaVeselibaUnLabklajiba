@@ -75,7 +75,9 @@ function toggleTips() {
 
     if (box.style.display === "none") {
       box.style.display = "block";
+	  document.getElementById('adviceButton').textContent = "Paslēpt veselības padomjus";
     } else {
       box.style.display = "none";
+	  document.getElementById('adviceButton').textContent = "Parādīt veselības padomjus";
     }
 }
