@@ -310,3 +310,52 @@ footer {
     height: auto;
   }
 }
+
+/* SCHOOL SECTION */
+
+.school-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: grid;
+  gap: 12px;
+}
+
+.school-section li {
+  background: #f8fdf9;
+  border-left: 5px solid #22c55e;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.school-section li:hover {
+  transform: translateX(4px);
+  background: #f0fdf4;
+}
+
+
+/* FUTURE SECTION */
+
+.future-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: grid;
+  gap: 12px;
+}
+
+.future-section li {
+  background: #f7fafc;
+  border-left: 5px solid #16a34a;
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+
+.future-section li:hover {
+  transform: translateX(4px);
+  background: #ecfdf5;
+}
