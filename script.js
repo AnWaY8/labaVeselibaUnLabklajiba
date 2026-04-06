@@ -69,3 +69,13 @@ document.querySelectorAll("#quiz details").forEach((item) => {
     }
   });
 });
+
+function toggleTips() {
+    const box = document.getElementById("tips-box");
+
+    if (box.style.display === "none") {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+}
